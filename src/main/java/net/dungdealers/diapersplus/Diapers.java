@@ -1,7 +1,7 @@
 package net.dungdealers.diapersplus;
 
 import net.dungdealers.diapersplus.DPItems.DPItems;
-import net.dungdealers.diapersplus.DPItems.DPItems;
+import net.dungdealers.diapersplus.DPStatusEffects.DPStatusEffects;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,6 +15,6 @@ public class Diapers implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("poop");
 		DPItems.registerModItems();
-
+		DPStatusEffects.registerModStatusEffects();
 	}
 }
