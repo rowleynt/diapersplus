@@ -14,6 +14,5 @@ public class DiapersPlus implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("poop");
 		DPItems.registerModItems();
-
 	}
 }
