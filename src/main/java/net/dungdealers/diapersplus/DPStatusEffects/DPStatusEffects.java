@@ -12,5 +12,6 @@ public class DPStatusEffects {
     public static void registerModStatusEffects() {
         Diapers.LOGGER.info("Registering Mod Status Effects for " + Diapers.MOD_ID);
         Registry.register(Registries.STATUS_EFFECT, new Identifier(Diapers.MOD_ID, "pissing"), PISSING);
+        Registry.register(Registries.SOUND_EVENT, Diapers.PISSING_SOUND, Diapers.PISSING_SOUND_EVENT);
     }
 }
