@@ -14,6 +14,7 @@ public class DPTags {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(DiapersPlus.MOD_ID, name));
         }
     }
+    //
     public static class DPItemTags {
         public static final TagKey<Item> DUMMY_ITEM_TAG = createTag("dummy_item_tag");
 
