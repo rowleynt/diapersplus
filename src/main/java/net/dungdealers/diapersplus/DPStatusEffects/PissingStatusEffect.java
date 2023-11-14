@@ -1,6 +1,6 @@
 package net.dungdealers.diapersplus.DPStatusEffects;
 
-import net.dungdealers.diapersplus.Diapers;
+import net.dungdealers.diapersplus.DiapersPlus;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -86,7 +86,7 @@ public class PissingStatusEffect extends StatusEffect {
                 entity.getWorld().playSound(
                     null,
                     entity.getBlockPos(),
-                    Diapers.PISSING_SOUND_EVENT,
+                    DiapersPlus.PISSING_SOUND_EVENT,
                     SoundCategory.AMBIENT,
                     1f,
                     1f
