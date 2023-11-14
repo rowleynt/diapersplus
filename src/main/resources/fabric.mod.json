@@ -20,10 +20,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.dungdealers.diapersplus.Diapers"
+			"net.dungdealers.diapersplus.DiapersPlus"
 		],
 		"fabric-datagen": [
-			"net.dungdealers.diapersplus.DiapersDataGenerator"
+			"net.dungdealers.diapersplus.DiapersPlusDataGenerator"
 		]
 	},
 	"mixins": [
