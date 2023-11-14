@@ -1,7 +1,9 @@
 package net.dungdealers.diapersplus.datagen;
 
+import net.dungdealers.diapersplus.util.DPTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import org.jetbrains.annotations.Nullable;
 
@@ -14,6 +16,7 @@ public class DPItemTagProvider extends FabricTagProvider.ItemTagProvider {
     }
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-
+        getOrCreateTagBuilder(DPTags.DPItemTags.DUMMY_ITEM_TAG)
+                .add(Items.STICK);
     }
 }
