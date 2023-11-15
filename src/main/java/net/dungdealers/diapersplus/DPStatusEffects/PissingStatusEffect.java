@@ -80,7 +80,7 @@ public class PissingStatusEffect extends StatusEffect {
                 setPissingSpotY(entity.getY());
                 setPissingSpotZ(entity.getZ());
             }
-            entity.teleport(getPissingSpotX(), getPissingSpotY(), getPissingSpotZ());
+            //entity.teleport(getPissingSpotX(), getPissingSpotY(), getPissingSpotZ());
 
             if (!getIsPlaying() && !entity.getWorld().isClient) {
                 entity.getWorld().playSound(
