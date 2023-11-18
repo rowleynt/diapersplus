@@ -1,29 +1,11 @@
 package net.dungdealers.diapersplus.mixin;
 
-import com.google.common.collect.Lists;
 import net.dungdealers.diapersplus.DPStatusEffects.DPStatusEffects;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.player.HungerManager;
-import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.nbt.NbtCompound;
-import net.minecraft.util.Util;
-import net.minecraft.util.math.Box;
-import net.minecraft.world.Difficulty;
-import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.*;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin extends LivingEntity {
