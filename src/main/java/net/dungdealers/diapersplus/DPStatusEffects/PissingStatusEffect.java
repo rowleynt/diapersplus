@@ -7,18 +7,10 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.sound.SoundCategory;
 
 public class PissingStatusEffect extends StatusEffect {
-    private double pissingSpotX = 0;
-    private double pissingSpotY = 0;
-    private double pissingSpotZ = 0;
+
     private boolean isPlaying = false;
 
     public boolean getIsPlaying() { return isPlaying; }
-
-    public void setPissingSpotX(double x) { pissingSpotX = x; }
-
-    public void setPissingSpotY(double y) { pissingSpotY = y; }
-
-    public void setPissingSpotZ(double z) { pissingSpotZ = z; }
 
     public void setIsPlaying(boolean playing) {
         isPlaying = playing;
@@ -34,9 +26,6 @@ public class PissingStatusEffect extends StatusEffect {
                     @Override
                     public void run() {
                         setIsPlaying(false);
-                        setPissingSpotX(0);
-                        setPissingSpotY(0);
-                        setPissingSpotZ(0);
                     }
                 },
                 (long) duration * 50
